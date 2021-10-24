@@ -7,7 +7,6 @@ h1,h2,p,a,ul,li,div,body{
 
 html,
 body {
-    background-color: rgb(32, 32, 36);
     --cor-font: hsl(240, 9%, 89%);
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -15,9 +14,10 @@ body {
 }
 
 main {
-    background-image: url(images/background.svg);
-    width: 375px;
-    height: 812px;
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vw;
 } 
 
 .container {
@@ -68,6 +68,10 @@ p {
     color: var(--cor-font);
 }
 
+span {
+    color: var(--cor-font);
+}
+
 ul {
     margin-top: 4rem;
 
@@ -77,4 +81,16 @@ ul {
     display: flex;
     gap: 0.8rem;
     justify-content: center;
+}
+
+button {
+    width: 40%;
+    background: url(images/background.svg) top;
+    object-fit: cover;
+    font-size: 16px;
+}
+
+input{
+    margin: 1vw;
+    height: 2vw;
 }
